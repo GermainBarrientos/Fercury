@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link rel="stylesheet" href="css/Fercury.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script> 
+
+
+	<script type="text/javascript" >
+		$.mobile.document.on( "click", "#open-popupArrow", function( evt ) {
+    $( "#popupArrow" ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+    evt.preventDefault();
+		});
+	</script>
+
+	<style type="text/css">
+  		.clickable-area {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #F6F;
+	
+}
+.clickable-area:focus {
+    outline: 0;
+}
+	</style>
+
+</head> 
+<body> 
+
+<div data-role="page" data-theme="a">
+	<div data-role="header">
+		<h1>Holi ☺ FeeeeR</h1>
+	</div>
+	<div data-role="content">	
+		<div align="center" data-role="popup" id="popupArrow" data-arrow="true" >
+			<p>FeeR Mi Amor</p>
+			<p>Te Amo Con todo el corazón!</p>
+            <p>Eres lo mejor de mi vida!</p>
+            <p>Eres EL AMOR de mi vida</p>
+            
+		</div>
+		<a id="open-popupArrow" class="clickable-area"><h1 align="center">¡Tocame!</h1></a>
+        
+        <div data-position="fixed">
+        <a href="#page2" data-position="fixed" class="ui-btn ui-shadow" data-transition="flow">Quieres saber algo?</a>
+		</div>
+        
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>FercurInc.&copy; | 2014</h4>
+	</div>
+</div>
+
+<div data-role="page" data-theme="a" id="page2">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="¡Regresar!">
+		<h2> La mejor Novia del Mundo</h2> 
+	</div>
+	<div data-role="content"><h5>
+    	<P>Fer, amor mio... sabes porque eres la mejor novia del mundo :D pues porque:</P>	
+		
+        <p>&hearts;Porque tu me amas yo te amo y nos amamos! </p>
+        <p>&hearts;Porque compartimos las mismas ideas tan locas y parece que me quitas las palabras de la boca. </p>
+        
+        <p>&hearts;Porque contigo siempre hay algo de que platicar.</p>
+        <p>&hearts;Porque eres la niña mas linda del planeta entero. (esta se la robé a Nigga).</p>
+        <p>&hearts;Porque creo que somos el mejor par</p>
+        <p>&hearts;Porque amamos la comida!</p>
+        <p>&hearts;Porque haces que todo sea perfecto.</p>
+        <p>&hearts;Por lo cariñosa que eres.</p>
+        
+        <p>&hearts;Porque se que pudieras estar con otros prospectos porque muchos levantan su mano para estar contigo 
+pero te admiro pues aun sabiendo lo que soy haz decidido estar conmigo.</p>
+        <p>Por eso y mucho más se que tú eres la novia perfecta FER!</p>
+        
+        </h5>
+        
+        <a href="#page3" data-position="fixed" class="ui-btn ui-shadow" data-transition="flow">Next</a>
+	
+    <audio src="tu me cambiaste la vida.mp3" preload="auto"   autoplay loop>
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+		<h4>FercurInc.&copy; | 2014</h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" data-theme="a" id="page3">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="¡Regresar!">
+		<h2> La mejor Novia del Mundo</h2> 
+	</div>
+	<div data-role="content">
+		<center>
+        <img src="images/1.jpg" id="img" >
+        </center>
+    </div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>FercurInc.&copy; | 2014</h4>
+	</div>
+</div>
+
+
+
+</body>
+</html>
